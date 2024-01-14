@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+    <div class="socials-box">
+        <a href="socials.html">Socials</a>
+    </div>
+
+    <header>
+        <h1>Adam Venecia</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="works.html">Works</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+   
+<div class="font2"> 
+    <h1>Paintings for Sale!</h1>
+</div>
+
+<div id="products">
+    
+    <div class="product" id="celestialWhispers">
+        <h3>Celestial Whispers</h3>
+        <div class="gallery-item">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <p>A dance of colors and shapes, evoking the essence of emotion.</p>
+        <p>Price: $250.00</p>
+        <button onclick="addToCart('celestialWhispers', 'Celestial Whispers', 250.00)">Add to Cart</button>
+    </div>
+  
+    <div class="product" id="etherealHarmony">
+        <h3>Ethereal Harmony</h3>
+        <div class="gallery-item">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <p>Whispers of the wind captured in strokes of vibrant hues.</p>
+        <p>Price: $5.00</p>
+        <button onclick="addToCart('etherealHarmony', 'Ethereal Harmony', 5.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="vibrantChaos">
+        <h3>Vibrant Chaos</h3>
+        <div class="gallery-item">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <p>A labyrinth of lines leading to an unknown, yet intriguing destination.</p>
+        <p>Price: $90.00</p>
+        <button onclick="addToCart('vibrantChaos', 'Vibrant Chaos', 90.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="sereneNebula">
+        <h3>Serene Nebula</h3>
+        <div class="gallery-item">
+            <img src="images/image4.jpg" alt="Image 4">
+        </div>
+        <p>A symphony of chaos and order, bound by the canvas.</p>
+        <p>Price: $180.00</p>
+        <button onclick="addToCart('sereneNebula', 'Serene Nebula', 180.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="cosmicRhythm">
+        <h3>Cosmic Rhythm</h3>
+        <div class="gallery-item">
+            <img src="images/image5.jpg" alt="Image 5">
+        </div>
+        <p>A canvas kissed by spontaneity, unveiling the beauty of unpredictability.</p>
+        <p>Price: $300.00</p>
+        <button onclick="addToCart('cosmicRhythm', 'Cosmic Rhythm', 300.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="surrealEuphoria">
+        <h3>Surreal Euphoria</h3>
+        <div class="gallery-item">
+            <img src="images/image6.jpg" alt="Image 6">
+        </div>
+        <p>Ephemeral echoes of untold stories painted in abstract strokes.</p>
+        <p>Price: $110.00</p>
+        <button onclick="addToCart('surrealEuphoria', 'Surreal Euphoria', 110.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="infiniteReverie">
+        <h3>Infinite Reverie</h3>
+        <div class="gallery-item">
+            <img src="images/image7.jpg" alt="Image 7">
+        </div>
+        <p>A visual poem, each brushstroke a verse in the language of abstraction.</p>
+        <p>Price: $70.00</p>
+        <button onclick="addToCart('infiniteReverie', 'Infinite Reverie', 70.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="chromaticFusion">
+        <h3>Chromatic Fusion</h3>
+        <div class="gallery-item">
+            <img src="images/image8.jpg" alt="Image 8">
+        </div>
+        <p>A mirage of forms, challenging perception and inviting interpretation.</p>
+        <p>Price: $40.00</p>
+        <button onclick="addToCart('chromaticFusion', 'Chromatic Fusion', 40.00)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="elementalMirage">
+        <h3>Elemental Mirage</h3>
+        <div class="gallery-item">
+            <img src="images/image9.jpg" alt="Image 9">
+        </div>
+        <p>The intersection of color and movement, creating a transient spectacle.</p>
+        <p>Price: $200.00</p>
+        <button onclick="addToCart('elementalMirage', 'Elemental Mirage', 200.00)">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="font2" id="cart">
+    <h2>Shopping Cart</h2>
+    <h4 id="cartItems"></h4>
+    <p>Subtotal: $<span id="subtotalAmount">0.00</span></p>
+    <p>Taxes: $<span id="taxes">0.00</span></p>
+    <p>Total: $<span id="totalAmount">0.00</span></p>
+
+<div class="font2" id="user-info">
+            <h2>User Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard" required>
+        </div>
+
+<br><br>
+
+<button onclick="checkout()">Checkout</button>
+
+<br><br><br><br>
+
+<script src="java.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Footer Section 1</h3>
+                <p>Content for footer section 1 goes here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Footer Section 2</h3>
+                <p>Content for footer section 2 goes here.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="java.js"></script>
+
+</body>
+
+</html>
